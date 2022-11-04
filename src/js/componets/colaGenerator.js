@@ -1,12 +1,12 @@
 class ColaGenerator {
   constructor() {
-      this.itemList = document.querySelector('.list-item');
+    this.itemList = document.querySelector('.list-item');
   }
 
-  setup() {
-      this.loadData(
+  async setup() {
+      await this.loadData(
           (json) => {
-              this.colaFactory(json);
+            this.colaFactory(json);
           }
       );
   }
